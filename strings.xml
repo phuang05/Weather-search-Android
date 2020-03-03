@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">WeatherApp</string>
+    <string name="test">test</string>
+    <string name="app_label">app_label</string>
+    <string name="search_hint">Search..</string>
+    <string name="search_title">search_title</string>
+    <string name="title_activity_search">searchActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cardRadius">10dp</string>
+    <string name="text">text</string>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_list_row"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/colorGray"
+    android:padding="0dp"
+    android:layout_margin="20dp">
+        <TextView
+            android:id="@+id/day_time"
+            android:layout_width="250dp"
+            android:layout_weight="1"
+            android:layout_height="60dp"
+            android:text="2010-0-0"
+            android:textSize="33dp"
+            android:textColor="@color/colorWhite"/>
+        <ImageView
+            android:id="@+id/day_img"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_height="55dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="TODO"
+            android:src = "@drawable/weather_windy"
+            android:scaleType="fitXY"
+            android:background="@color/colorGray"/>
+        <TextView
+            android:id="@+id/day_high"
+            android:layout_width="55dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="low"
+            android:textSize="35dp"
+            android:textColor="@color/colorWhite"/>
+        <TextView
+            android:id="@+id/day_low"
+            android:layout_width="55dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="high"
+            android:textSize="35dp"
+            android:textColor="@color/colorWhite"/>
+
+
+
+</LinearLayout>

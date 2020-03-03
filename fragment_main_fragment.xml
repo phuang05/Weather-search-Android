@@ -1,0 +1,345 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.penghuang.hw9_01.Fragment.main_fragment"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+
+    <LinearLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible"
+        android:background="@color/colorBlack">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:indeterminateDrawable="@drawable/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textColor="@color/colorWhite"
+            android:text="Fetching Weather"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/view_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#000000"
+            android:padding="0dp"
+            android:visibility="visible"
+            >
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="@color/colorGray"
+                android:foreground="?android:selectableItemBackground"
+                >
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:padding="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+
+                    android:padding="20dp">
+                    <ImageView
+                        android:id="@+id/currentLocationSummaryPic"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src = "@drawable/weather_fog"
+                        android:scaleType="fitXY"
+                        android:layout_marginLeft="80dp"/>
+
+                    <LinearLayout
+                        android:id="@+id/currentLocatioInfo"
+                        android:layout_width="150dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:padding="0dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="0dp"
+                            android:orientation="horizontal"
+                            android:padding="0dp">
+
+                            <TextView
+                                android:id="@+id/currentTemperature"
+                                android:layout_width="60dp"
+                                android:layout_height="match_parent"
+                                android:text="40"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="40dp" />
+
+                            <TextView
+                                android:layout_width="10dp"
+                                android:layout_height="100dp"
+                                android:text="˚"
+                                android:textSize="40dp"
+                                android:textColor="@color/colorWhite"/>
+
+                            <TextView
+                                android:layout_width="20dp"
+                                android:layout_height="60dp"
+                                android:text="F"
+                                android:textSize="40dp"
+                                android:textColor="@color/colorWhite"/>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/currentLocationSummaryText"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:text="Overcast"
+                            android:textSize="15dp"
+                            android:textColor="@color/colorGrayWhite"
+                            android:maxLines="2"
+                            android:lines="2"
+                            android:scrollHorizontally="true"
+                            android:ellipsize="end"/>
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:id="@+id/currentLocationText"
+                        android:layout_width="350dp"
+                        android:layout_height="40dp"
+                        android:text="Los,CA,USA"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="50dp"
+
+                        android:textSize="30dp"
+                        android:textColor="@color/colorWhite"/>
+                    <ImageView
+                        android:id="@+id/btn_detail"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/information_outline"/>
+                </LinearLayout>
+                    </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="@color/colorGray"
+                >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="horizontal"
+                android:background="@color/colorGray"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorGray"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/water_percent"
+                        android:scaleType="fitXY"
+                        android:gravity="center"
+                        android:tint="@color/colorPurple"/>
+                    <TextView
+                        android:id="@+id/currentLocationHumidity"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="111"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Humiiidity"
+                        android:gravity="center"
+                        android:textColor="@color/colorGrayWhite"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorGray"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/weather_windy"
+                        android:scaleType="fitXY"
+                        android:tint="@color/colorPurple"/>
+                    <TextView
+                        android:id="@+id/currentLocationWindSpeed"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="111"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textSize="13dp"
+                        android:text="WindSpeed"
+                        android:gravity="center"
+                        android:textColor="@color/colorGrayWhite"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorGray"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/eye_outline"
+                        android:scaleType="fitXY"
+                        android:gravity="center"
+                        android:tint="@color/colorPurple"/>
+                    <TextView
+                        android:id="@+id/currentLocationVisibility"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="111"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Visibility"
+                        android:gravity="center"
+                        android:textColor="@color/colorGrayWhite"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorGray"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:src="@drawable/gauge"
+                        android:scaleType="fitXY"
+                        android:tint="@color/colorPurple"/>
+                    <TextView
+                        android:id="@+id/currentLocationPressure"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:text="111"
+                        android:textSize="15dp"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textSize="15dp"
+                        android:text="Pressure"
+                        android:gravity="center"
+                        android:textColor="@color/colorGrayWhite"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="20dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="@color/colorGray"
+                >
+            <ListView
+                android:id="@+id/view_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorGray"
+                android:padding="0dp"
+                android:layout_margin="20dp"
+                >
+
+
+            </ListView>
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/map_marker_plus"
+        app:backgroundTint="@color/colorPurple"/>
+
+</FrameLayout>
